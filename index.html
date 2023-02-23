@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+<style type="text/css">
+.STYLE2 {
+    font-size: 14pt;
+    font-family: "Book Antiqua";
+}
+</style>
+
+<title>Audio samples from "MobileTTS: A deployable and productive text-to-speech network for mobile devices"</title>
+</head>
+
+<body>
+<font size=5>Audio samples from "MobileTTS: A deployable and productive text-to-speech network for mobile devices"</font>
+<br><br>
+<font size=4>Authors: Hongbiao Yang, Jun Wang, Guoqiao Yu, GuangLu Wan</font>
+<br><br>
+<font size=4>Text-to-speech is widely applied to different scenarios, among which the demand on mobile devices is increasingly prominent. However, current popular frameworks are not well-deployed to mobile devices, due to low computing power, small memory, etc. MobileTTS is proposed in this paper, a fully convolutional, deployable and productive network for mobile devices. To ensure the model lightweight and fast inference speed, two lightweight architectures: depthwise separable convolution (SepConv) and stacked Deep Feedforward Sequential Memory Network block (SDB) are introduced. While AlignmentEncoder is adopted to obtain phone-level duration during training to remove the dependency on an external speech-text alignment tool. Quantization aware training and compression is first introduced to speech synthesis. Experiments show the proposed MobileTTS can achieve satisfied performance with 6.41x inference speedup on CPU and 18.9x compression ratio with 1.8M model parameters and 2.2M model size. In most mobile device scenarios, MobileTTS can run smoothly and generate high-quality audios.</font>
+<br>
+<br><hr><br>
+<font size=4><b>Audio Samples:</b></font><br>
+<br>
+<font size=4><b>1. The female native Mandarin speaker’s voices from professional records</b></font><br>
+<br>
+<font size=3><i>Text: 宝马配挂跛骡鞍，貂蝉怨枕董翁榻。</i></font>
+<p><audio controls src="./wav/gt/000003.wav"></audio></p>
+<font size=3><i>Text: 邓小平与撒切尔会晤。</i></font>
+<p><audio controls src="./wav/gt/000004.wav"></audio></p>
+<font size=3><i>Text: 老虎幼崽与宠物犬玩耍。</i></font>
+<p><audio controls src="./wav/gt/000005.wav"></audio></p>
+<br>
+<font size=4><b>2. Audio quality of different systems.</b></font><br>
+<br>
+<font size=3><i>Text:努尔别尔德耶娃请周永康转达对吴邦国委员长的亲切问候。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td>Fastspeech2</td>
+            <td><p><audio controls src="./wav/gl/fs2/000057.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS</td>
+            <td><p><audio controls src="./wav/gl/dt/000057.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td width=160>Proposed MobileTTS</td>
+            <td><p><audio controls src="./wav/gl/mt/000057.wav" ></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 网购或网搜股民信息，以高回报为饵请君入瓮。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td>Fastspeech2</td>
+			<td><p><audio controls src="./wav/gl/fs2/000067.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/gl/dt/000067.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td width=160> Proposed MobileTTS</td>
+			<td><p><audio controls src="./wav/gl/mt/000067.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<font size=3><i>Text: 受损宋代哥窑青釉葵瓣口盘正面损毁后。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td>Fastspeech2</td>
+			<td><p><audio controls src="./wav/gl/fs2/000090.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/gl/dt/000090.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td width=160>Proposed MobileTTS</td>
+			<td><p><audio controls src="./wav/gl/mt/000090.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+</body>
+</html>
